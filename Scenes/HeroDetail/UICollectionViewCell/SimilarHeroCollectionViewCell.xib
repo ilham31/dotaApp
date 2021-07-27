@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SimilarHeroCollectionViewCell" reuseIdentifier="SimilarHeroCollectionViewCell" id="gTV-IL-0wX" customClass="SimilarHeroCollectionViewCell" customModule="dota" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="149" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="149" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4i4-R9-TxT" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="149" height="108"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z2A-1J-b7Y">
+                                <rect key="frame" x="8" y="8" width="133" height="92"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z2A-1J-b7Y" firstAttribute="leading" secondItem="4i4-R9-TxT" secondAttribute="leading" constant="8" id="NXz-Qx-Bdq"/>
+                            <constraint firstItem="Z2A-1J-b7Y" firstAttribute="top" secondItem="4i4-R9-TxT" secondAttribute="top" constant="8" id="S32-yR-Qy3"/>
+                            <constraint firstAttribute="trailing" secondItem="Z2A-1J-b7Y" secondAttribute="trailing" constant="8" id="e21-Wv-Xer"/>
+                            <constraint firstAttribute="bottom" secondItem="Z2A-1J-b7Y" secondAttribute="bottom" constant="8" id="nCy-yV-aLK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="4i4-R9-TxT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lZ4-BM-mzb"/>
+                <constraint firstAttribute="bottom" secondItem="4i4-R9-TxT" secondAttribute="bottom" id="pMz-pb-9lW"/>
+                <constraint firstAttribute="trailing" secondItem="4i4-R9-TxT" secondAttribute="trailing" id="ssJ-07-zVh"/>
+                <constraint firstItem="4i4-R9-TxT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wr2-r5-O2d"/>
+            </constraints>
+            <size key="customSize" width="149" height="108"/>
+            <connections>
+                <outlet property="similarHeroImageView" destination="Z2A-1J-b7Y" id="kt8-Ku-1Vg"/>
+            </connections>
+            <point key="canvasLocation" x="141.30434782608697" y="52.232142857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

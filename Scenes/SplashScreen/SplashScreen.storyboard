@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2T0-OT-XiL">
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="Rg3-r7-iLO">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2T0-OT-XiL" customClass="SplashScreenViewController" customModule="dota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bow-pR-Ctb">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen_image" translatesAutoresizingMaskIntoConstraints="NO" id="u2T-pk-DQy">
+                                <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-dX-GZC">
+                                <rect key="frame" x="444.66666666666669" y="301" width="37" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait for a moment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPK-Vw-ruY">
+                                <rect key="frame" x="60" y="354" width="806" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nn0-pS-8WT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mPK-Vw-ruY" firstAttribute="leading" secondItem="nn0-pS-8WT" secondAttribute="leading" constant="16" id="GgM-XM-3SK"/>
+                            <constraint firstAttribute="bottom" secondItem="u2T-pk-DQy" secondAttribute="bottom" id="IU2-fE-vXG"/>
+                            <constraint firstItem="nn0-pS-8WT" firstAttribute="trailing" secondItem="mPK-Vw-ruY" secondAttribute="trailing" constant="16" id="KSL-Wz-Lzc"/>
+                            <constraint firstItem="nn0-pS-8WT" firstAttribute="bottom" secondItem="mPK-Vw-ruY" secondAttribute="bottom" constant="32" id="QDj-sl-BYH"/>
+                            <constraint firstItem="u2T-pk-DQy" firstAttribute="top" secondItem="bow-pR-Ctb" secondAttribute="top" id="VgV-4x-bEq"/>
+                            <constraint firstItem="OKL-dX-GZC" firstAttribute="centerX" secondItem="mPK-Vw-ruY" secondAttribute="centerX" id="b7H-H3-Twu"/>
+                            <constraint firstAttribute="trailing" secondItem="u2T-pk-DQy" secondAttribute="trailing" id="cJ5-gr-GE7"/>
+                            <constraint firstItem="mPK-Vw-ruY" firstAttribute="top" secondItem="OKL-dX-GZC" secondAttribute="bottom" constant="16" id="eIC-HF-BhJ"/>
+                            <constraint firstItem="u2T-pk-DQy" firstAttribute="leading" secondItem="bow-pR-Ctb" secondAttribute="leading" id="tGh-Sn-I2i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vi1-PI-pLN"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="OKL-dX-GZC" id="0aK-xZ-cvV"/>
+                        <outlet property="splashScreenImageView" destination="u2T-pk-DQy" id="Vab-7T-ljr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9di-fI-IUw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897.10144927536237" y="4.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_screen_image" width="640" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
